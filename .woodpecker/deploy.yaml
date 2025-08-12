@@ -1,0 +1,27 @@
+when:
+  - event: push
+    branch: main
+
+steps:
+  - name: npm run docs:build
+    image: codeberg.org/woodpecker-plugins/node-pm
+    settings:
+      run: docs:build
+      with: npm
+      frozen_lockfile: true
+      ignore_node_modules: true
+  - name: scp deploy to nginx
+    image: appleboy/drone-scp
+    settings:
+      host:
+        from_secret: SSH_HOST
+      username:
+        from_secret: SSH_USERNAME
+      port:
+        from_secret: SSH_PORT
+      key:
+        from_secret: SSH_PRIVATE_KEY
+      overwrite: true
+      target: /var/www/manthrowshat.net/blog
+      source: .vitepress/dist/*
+      strip_components: 2

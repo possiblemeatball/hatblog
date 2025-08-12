@@ -1,0 +1,13 @@
+when:
+  - event: push
+    branch:
+      exclude: main
+
+steps:
+  - name: npm run docs:build
+    image: codeberg.org/woodpecker-plugins/node-pm
+    settings:
+      run: docs:build
+      with: npm
+      frozen_lockfile: true
+      ignore_node_modules: true
