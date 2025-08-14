@@ -7,6 +7,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     description: "a quaint, humble blog hosting concise, subtle articles",
     base: "/blog/",
     cleanUrls: true,
+    srcExclude: ["README.md"],
     themeConfig: {
 
     },
