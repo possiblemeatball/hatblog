@@ -5,7 +5,7 @@ const { site, frontmatter } = useData()
 </script>
 
 <template>
-  <div class="flex flex-col justify-center not-md:items-center md:items-right">
+  <div class="flex flex-col justify-center w-full not-md:items-center md:items-right">
     <div class="text-xl">{{ site.title }}</div>
     <div class="text-sm text-gray-700 dark:text-gray-400 italic">
       <div>{{ site.description }}</div>
