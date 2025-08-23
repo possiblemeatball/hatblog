@@ -13,7 +13,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
     vite: {
         plugins: [
-            tailwindcss()
+            tailwindcss(),
         ]
     }
 })
