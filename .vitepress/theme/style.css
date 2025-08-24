@@ -21,26 +21,28 @@
 
     @font-face {
         font-family: 'Red Hat Display';
-        font-style: normal;
         src: url(assets/fonts/red_hat_display.ttf) format('truetype');
     }
 
     @font-face {
         font-family: 'Red Hat Text';
-        font-style: normal;
         src: url(assets/fonts/red_hat_text.ttf) format('truetype');
     }
 
     @font-face {
         font-family: 'Red Hat Mono';
-        font-style: normal;
         src: url(assets/fonts/red_hat_mono.ttf) format('truetype');
     }
 
     @font-face {
         font-family: 'Mate';
-        font-weight: 400;
         font-style: normal;
         src: url(assets/fonts/mate.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Mate';
+        font-style: italic;
+        src: url(assets/fonts/mate_italic.ttf) format('truetype');
     }
 }
