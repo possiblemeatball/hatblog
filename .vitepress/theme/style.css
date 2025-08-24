@@ -1,8 +1,46 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@theme {
+    --font-sans: "Red Hat Text", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: "Mate", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-mono: "Red Hat Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-display: "Red Hat Display", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-cursive: cursive;
+}
+
 @layer base {
     :root {
-        @apply bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 overflow-x-hidden;
+        @apply bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 font-sans;
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility !important;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+    }
+
+    @font-face {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        src: url(assets/fonts/red_hat_display.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        src: url(assets/fonts/red_hat_text.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Red Hat Mono';
+        font-style: normal;
+        src: url(assets/fonts/red_hat_mono.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Mate';
+        font-weight: 400;
+        font-style: normal;
+        src: url(assets/fonts/mate.ttf) format('truetype');
     }
 }
