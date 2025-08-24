@@ -9,7 +9,10 @@ export default defineConfigWithTheme<ThemeConfig>({
     cleanUrls: true,
     srcExclude: ["README.md"],
     themeConfig: {
-
+        nav: [
+            { text: "newsfeed", link: "/blog/" },
+            { text: "newsfeed but in rss form", link: "/blog/feed.rss" },
+        ]
     },
     vite: {
         plugins: [
