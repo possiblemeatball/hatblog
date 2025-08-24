@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import {Content} from 'vitepress';
+import {Content, useData} from 'vitepress';
 import Footer from "./components/Footer.vue";
 import Sidebar from "./components/Sidebar.vue";
+
+const {frontmatter} = useData()
 </script>
 
 <template>
@@ -11,7 +13,12 @@ import Sidebar from "./components/Sidebar.vue";
     <div class="w-full">
       <div class="p-4 min-h-svh
                   bg-neutral-200 dark:bg-neutral-800">
-        <Content class="font-serif prose text-justify prose-neutral dark:prose-invert" />
+        <div class="font-serif prose max-w-2xl text-justify prose-neutral dark:prose-invert">
+          <h1 class="mb-1 text-left">{{ frontmatter.title }}</h1>
+          <p class="mt-1 text-left text-sm text-gray-700 dark:text-gray-400 italic">{{ frontmatter.description }}</p>
+
+          <Content />
+        </div>
       </div>
       <Footer />
     </div>
