@@ -1,11 +1,11 @@
 ---
-title: Test Article
-author: possiblemeatball
+title: "Test Article"
 description: "Or: How I Learned To Stop Worrying And Love The Blog"
-excerpt: "This is an example of an excerpt"
+author:
+  name: "possiblemeatball"
+  email: "meatball@manthrowshat.net"
+  link: "https://possiblemeatball.net"
 date: "Aug 22 2025 4:00 PM EST"
 ---
-<h1 class="mb-1">{{$frontmatter.title}}</h1>
-<p class="mt-1 text-sm text-gray-700 dark:text-gray-400 italic">{{$frontmatter.description}}</p>
-
-blarg
+Typing an exorbitant amount of text in order to see whether my CSS handles this well or not, this sentence is mostly meaningless and just intended to be long enough to trigger a word wrap
+---
