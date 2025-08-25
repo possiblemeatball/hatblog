@@ -8,6 +8,5 @@ author:
 date: "Aug 22 2025 5:00 PM EST"
 ---
 Blah blah blah, I'm typing a test
----
 
 This is going to show up I hope

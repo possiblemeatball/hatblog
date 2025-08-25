@@ -12,9 +12,7 @@ import { data as posts } from './posts.data'
       <p class="mt-0 mb-2 text-sm text-gray-700 dark:text-gray-400 italic">
         {{ post.frontmatter.description }}
       </p>
-      <p class="mt-1 mb-2">
-        {{ post.excerpt }}
-      </p>
+      <div class="prose-p:mt-2 prose-p:mb-2" v-html="post.excerpt" />
       <p class="mt-0 mb-4 text-sm text-gray-700 dark:text-gray-400">
         published on {{ new Date(post.frontmatter.date).toLocaleString() }}
         by <a :href="post.frontmatter.author.link">{{ post.frontmatter.author.name }}</a>
