@@ -36,7 +36,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         })
 
         const posts = await createContentLoader(
-            "*.md", {render: true}
+            "post/*.md", {render: true}
         ).load()
 
         posts.sort(

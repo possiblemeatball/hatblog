@@ -1,6 +1,6 @@
 import { createContentLoader } from "vitepress";
 
-export default createContentLoader('*.md', {
+export default createContentLoader('post/*.md', {
     includeSrc: false,
     render: true,
     excerpt: (file, options) => {
