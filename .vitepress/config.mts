@@ -35,9 +35,9 @@ export default defineConfigWithTheme<ThemeConfig>({
             copyright: "© " + new Date().getFullYear() + " Matt \"possiblemeatball\" Walker under CC BY 4.0"
         })
 
-        const posts = await createContentLoader("*.md", {
-            excerpt: true, render: true
-        }).load()
+        const posts = await createContentLoader(
+            "*.md", {render: true}
+        ).load()
 
         posts.sort(
             (a, b) =>
