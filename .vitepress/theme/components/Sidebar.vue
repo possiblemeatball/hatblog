@@ -12,7 +12,7 @@ const { site, frontmatter } = useData()
     </div>
     <div class="font-sans text-sm">
       <span v-for="item in site.themeConfig.nav">
-        <a class="underline" :href="item.link">
+        <a class="underline" :href="item.link" :target="item.target">
           {{ item.text }}
         </a>
 

@@ -14,7 +14,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     themeConfig: {
         nav: [
             { text: "newsfeed", link: "/blog/" },
-            { text: "newsfeed but in rss form", link: "/blog/feed.rss" },
+            { text: "newsfeed but in rss form", link: "/blog/feed.rss", target: "_blank" },
         ]
     },
     vite: {
