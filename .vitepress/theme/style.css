@@ -7,11 +7,59 @@
     --font-mono: "Red Hat Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-display: "Red Hat Display", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-cursive: cursive;
+
+    --color-charcoal-white-100: #d1b794;
+    --color-charcoal-white-200: #bca280;
+    --color-charcoal-white-300: #ac9373;
+    --color-charcoal-white-400: #927c5e;
+    --color-charcoal-white-500: #78664c;
+
+    --color-charcoal-black-100: #413423;
+    --color-charcoal-black-200: #342a1c;
+    --color-charcoal-black-300: #271f15;
+    --color-charcoal-black-400: #1d1710;
+    --color-charcoal-black-500: #120e08;
+}
+
+@utility prose-charcoal {
+    --tw-prose-body: var(--color-charcoal-black-400);
+    --tw-prose-headings: var(--color-charcoal-black-500);
+    --tw-prose-lead: var(--color-charcoal-black-300);
+    --tw-prose-links: var(--color-charcoal-black-500);
+    --tw-prose-bold: var(--color-charcoal-black-500);
+    --tw-prose-counters: var(--color-charcoal-black-300);
+    --tw-prose-bullets: var(--color-charcoal-black-500);
+    --tw-prose-hr: var(--color-charcoal-black-500);
+    --tw-prose-quotes: var(--color-charcoal-black-500);
+    --tw-prose-quote-borders: var(--color-charcoal-black-100);
+    --tw-prose-captions: var(--color-charcoal-black-100);
+    --tw-prose-code: var(--color-charcoal-black-500);
+    --tw-prose-pre-code: var(--color-charcoal-white-100);
+    --tw-prose-pre-bg: var(--color-charcoal-black-500);
+    --tw-prose-th-borders: var(--color-charcoal-black-500);
+    --tw-prose-td-borders: var(--color-charcoal-black-100);
+
+    --tw-prose-invert-body: var(--color-charcoal-white-200);
+    --tw-prose-invert-headings: var(--color-charcoal-white-100);
+    --tw-prose-invert-lead: var(--color-charcoal-white-300);
+    --tw-prose-invert-links: var(--color-charcoal-white-100);
+    --tw-prose-invert-bold: var(--color-charcoal-white-100);
+    --tw-prose-invert-counters: var(--color-charcoal-white-500);
+    --tw-prose-invert-bullets: var(--color-charcoal-white-300);
+    --tw-prose-invert-hr: var(--color-charcoal-white-100);
+    --tw-prose-invert-quotes: var(--color-charcoal-white-100);
+    --tw-prose-invert-quote-borders: var(--color-charcoal-white-500);
+    --tw-prose-invert-captions: var(--color-charcoal-white-500);
+    --tw-prose-invert-code: var(--color-charcoal-white-300);
+    --tw-prose-invert-pre-code: var(--color-charcoal-white-300);
+    --tw-prose-invert-pre-bg: var(--color-charcoal-black-500);
+    --tw-prose-invert-th-borders: var(--color-charcoal-white-100);
+    --tw-prose-invert-td-borders: var(--color-charcoal-white-500);
 }
 
 @layer base {
     :root {
-        @apply bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 font-sans;
+        @apply bg-charcoal-white-200 dark:bg-charcoal-black-500 text-charcoal-black-500 dark:text-charcoal-white-100 font-sans;
 
         font-synthesis: none;
         text-rendering: optimizeLegibility !important;
