@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import {useData} from 'vitepress'
-
-const { site, frontmatter } = useData()
 </script>
 
 <template>
@@ -14,6 +11,12 @@ const { site, frontmatter } = useData()
         <a class="underline" target="_blank" href="https://github.com/mubin6th/charcoal/">color scheme</a>
       </div>
     </div>
+  </div>
+  <div class="not-md:invisible md:relative flex justify-center">
+    <img class="fixed top-6 left-6 w-[24px]"
+         src="../assets/img/hat.png" alt="hat"/>
+    <img class="fixed bottom-0 left-12 w-[64px]"
+         src="../assets/img/man.png" alt="man"/>
   </div>
 </template>
 

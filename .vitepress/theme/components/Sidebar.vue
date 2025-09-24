@@ -8,7 +8,8 @@ const { site, frontmatter } = useData()
   <div class="flex flex-col select-none justify-center w-full items-center md:items-end md:text-end">
     <div class="font-display text-xl">{{ site.title }}</div>
     <div class="font-sans text-sm text-charcoal-black-100 dark:text-charcoal-white-500 italic">
-      {{ site.description }}
+      <div>a quaint, humble blog</div>
+      <div>hosting concise, subtle articles</div>
     </div>
     <div class="font-sans text-sm">
       <span v-for="item in site.themeConfig.nav">
