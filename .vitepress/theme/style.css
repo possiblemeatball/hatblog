@@ -59,7 +59,7 @@
 
 @layer base {
     :root {
-        @apply bg-charcoal-white-200 dark:bg-charcoal-black-500 text-charcoal-black-500 dark:text-charcoal-white-100 font-sans;
+        @apply bg-charcoal-white-200 dark:bg-charcoal-black-400 text-charcoal-black-500 dark:text-charcoal-white-100 font-sans;
 
         font-synthesis: none;
         text-rendering: optimizeLegibility !important;
