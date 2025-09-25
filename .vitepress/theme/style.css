@@ -51,8 +51,8 @@
     --tw-prose-invert-quote-borders: var(--color-charcoal-white-500);
     --tw-prose-invert-captions: var(--color-charcoal-white-500);
     --tw-prose-invert-code: var(--color-charcoal-white-300);
-    --tw-prose-invert-pre-code: var(--color-charcoal-white-300);
-    --tw-prose-invert-pre-bg: var(--color-charcoal-black-500);
+    --tw-prose-invert-pre-code: var(--color-charcoal-white-100);
+    --tw-prose-invert-pre-bg: var(--color-charcoal-black-400);
     --tw-prose-invert-th-borders: var(--color-charcoal-white-100);
     --tw-prose-invert-td-borders: var(--color-charcoal-white-500);
 }
